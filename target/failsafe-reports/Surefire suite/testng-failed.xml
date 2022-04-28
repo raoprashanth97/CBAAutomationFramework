@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" verbose="0" name="Failed suite [Surefire suite]" parallel="methods">
+  <test thread-count="1" verbose="0" name="Surefire test(failed)" parallel="methods">
+    <classes>
+      <class name="tests.PublicBusTest">
+        <methods>
+          <include name="choosePublicBusAndPerformChallenge" invocation-numbers="0"/>
+          <include name="startBrowser"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- tests.PublicBusTest -->
+      <class name="tests.LeaderBoardTest">
+        <methods>
+          <include name="verifyScoreCard" invocation-numbers="0"/>
+          <include name="startBrowser"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- tests.LeaderBoardTest -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->
